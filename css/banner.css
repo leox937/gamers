@@ -1,0 +1,67 @@
+#banner {
+    margin-top: 50px;
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    height: 100%;
+}
+
+#banner .contenedor {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    color: rgb(4, 77, 136);
+    text-shadow: 2px 2px black;
+}
+
+#banner h2 {
+    font-size: 28px;
+}
+
+#banner p {
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+#banner a {
+    width: 100px;
+    display: block;
+    color: rgb(4, 77, 136);
+    text-decoration: none;
+    padding: 10px;
+    margin-top: 10px;
+    border: 3px solid aliceblue;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px black;
+}
+
+#banner a:hover {
+    background: rgba(34, 34, 33, 0.5);
+}
+
+@media (min-width:480px) {
+    #banner h2 {
+        font-size: 40px;
+    }
+
+    #banner a {
+        margin-top: 25px;
+    }
+}
+
+@media (min-width:768px) {
+    #banner {
+        height: 300px;
+        overflow: hidden;
+    }
+
+    #banner img {
+        height: auto;
+        margin-top: -100px;
+    }
+}
